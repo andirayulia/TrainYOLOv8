@@ -99,12 +99,33 @@ EPOCH 50 = 3 Object terdeteksi ## Confidence Safety Vest = 0,84
 
 Namun dengan lebih banyak epoch, maka waktu dan sumber daya komputasi yang diperlukan untuk pelatihan lebih banyak.
 
+============================================================================================
+
 
 **PREDICT CONSTRUCTION DATASET 2**
 
-Training menggunakan dataset diatas, namun mencoba predict dari dataset lain DATASET : DATASET Roboflow
+Training menggunakan dataset lain. Dataset ini diambil dari https://universe.roboflow.com/dankookexp/construction_sites, dengan mengambil folder test berisi (images) saja tanpa label karena hanya untuk mencoba model untuk prediksi pada dataset lain. 
 
-Hanya diambil images dari folder test
+```python
+from google.colab import files
+uploaded = files.upload()
+```
+Kemudian upload file zip **test2.zip** <br>
+dan unzip 
+
+```python
+!unzip -q test2.zip -d /content/
+```
+**Predict**
+```python
+!yolo task=detect mode=predict model=/content/runs/detect/train4/weights/best.pt conf=0.5 source=/content/test2/images
+```
+
+
+
+
+
+
 
 
 
