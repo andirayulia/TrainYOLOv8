@@ -90,7 +90,7 @@ metrics/mAP_0.5: Mean Average Precision (mAP) dengan threshold IoU 0.5. mAP meru
 
 ![youtube-186_jpg rf a7c82770148c2886fb42a72693784687](https://github.com/user-attachments/assets/51b262bd-f586-4fca-b755-a20c183cbe92)
 
-============================================================================================
+=================================================================================
 
 Dari hasil training di atas, Model yang menggunakan epoch lebih banyak dapat melakukan prediksi lebih banyak object dan meningkatkan nilai confidence-nya yaitu :
 
@@ -99,7 +99,7 @@ EPOCH 50 = 3 Object terdeteksi ## Confidence Safety Vest = 0,84
 
 Namun dengan lebih banyak epoch, maka waktu dan sumber daya komputasi yang diperlukan untuk pelatihan lebih banyak.
 
-============================================================================================
+==================================================================================
 
 
 **PREDICT CONSTRUCTION DATASET 2**
